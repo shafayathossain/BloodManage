@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:padding="@dimen/dimen_10dp"
+    android:layout_margin="@dimen/dimen_10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameLabelTextView"
+        android:text="Name : "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dimen_10dp"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTextView"
+        app:layout_constraintLeft_toRightOf="@id/nameLabelTextView"
+        app:layout_constraintRight_toLeftOf="@+id/callButton"
+        app:layout_constraintTop_toTopOf="@id/nameLabelTextView"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:text="Anisur Rahman"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupLabelTextView"
+        android:text="Requred Blood Group : "
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dimen_10dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupTextView"
+        app:layout_constraintLeft_toRightOf="@id/groupLabelTextView"
+        app:layout_constraintTop_toTopOf="@id/groupLabelTextView"
+        android:text="O+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospitalNameLabelTextView"
+        app:layout_constraintTop_toBottomOf="@id/groupLabelTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="Hospital Name : " />
+
+    <TextView
+        android:id="@+id/hospitalNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/callButton"
+        app:layout_constraintLeft_toRightOf="@id/hospitalNameLabelTextView"
+        app:layout_constraintTop_toTopOf="@id/hospitalNameLabelTextView"
+        android:text="Lab Aid"
+        android:layout_marginRight="@dimen/dimen_10dp"/>
+
+    <TextView
+        android:id="@+id/areaLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hospitalNameTextView"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="Area : "/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaTextView"
+        app:layout_constraintTop_toTopOf="@id/areaLabelTextView"
+        app:layout_constraintLeft_toRightOf="@id/areaLabelTextView"
+        android:text="Demra"
+        app:layout_constraintRight_toLeftOf="@id/callButton"
+        android:layout_marginRight="@dimen/dimen_10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactNoLabelTextView"
+        android:text="Contact No : "
+        app:layout_constraintTop_toBottomOf="@id/areaTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dimen_10dp"/>
+
+    <TextView
+        android:id="@+id/contactNoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/callButton"
+        app:layout_constraintLeft_toRightOf="@id/contactNoLabelTextView"
+        app:layout_constraintTop_toTopOf="@id/contactNoLabelTextView"
+        android:text="01631875269"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateLabelTextView"
+        android:text="Blood Needs on : "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactNoLabelTextView"
+        android:layout_margin="@dimen/dimen_10dp"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/dateLabelTextView"
+        app:layout_constraintTop_toTopOf="@id/dateLabelTextView"
+        app:layout_constraintRight_toLeftOf="@id/callButton"
+        android:layout_marginRight="@dimen/dimen_10dp"/>
+
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:text="Call"/>
+
+
+</android.support.constraint.ConstraintLayout>

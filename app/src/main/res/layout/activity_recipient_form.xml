@@ -2,14 +2,15 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hintTextView"
         android:text="Fillup the form"
-        android:textColor="#000"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -25,6 +26,8 @@
         android:layout_margin="@dimen/dimen_10dp"
         android:hint="Name"
         android:text="Anis"
+        android:backgroundTint="#FFF"
+        android:textColor="#FFF"
         android:maxLines="1"
         android:inputType="text"
         android:imeOptions="actionNext"
@@ -40,6 +43,8 @@
         android:layout_margin="@dimen/dimen_10dp"
         android:hint="Contact No."
         android:text="01631875269"
+        android:backgroundTint="#FFF"
+        android:textColor="#FFF"
         android:maxLines="1"
         android:inputType="number"
         android:imeOptions="actionNext"
@@ -55,7 +60,8 @@
         android:layout_margin="@dimen/dimen_10dp"
         android:entries="@array/blood_groups"
         android:padding="@dimen/dimen_10dp"
-
+        android:backgroundTint="#fff"
+        android:foregroundTint="#fff"
         android:spinnerMode="dialog"/>
 
     <EditText
@@ -66,6 +72,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bloodGroupSpinner"
         android:text="ibne sina"
+        android:backgroundTint="#FFF"
+        android:textColor="#FFF"
         android:hint="Hospital Name"
         android:layout_margin="@dimen/dimen_10dp"
         android:padding="@dimen/dimen_10dp"/>
@@ -80,6 +88,8 @@
         android:padding="@dimen/dimen_10dp"
         android:layout_margin="@dimen/dimen_10dp"
         android:spinnerMode="dialog"
+        android:backgroundTint="#FFF"
+        android:foregroundTint="#fff"
         android:entries="@array/areas"/>
 
     <Button
@@ -102,5 +112,15 @@
         android:layout_margin="@dimen/dimen_10dp"
         android:text="Submit"
         android:id="@+id/submitButton"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/submitButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/reciptor_form_bannar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
