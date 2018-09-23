@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hintTextView"
+        android:text="Fillup the form"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dimen_10dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hintTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/nameEditText"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:hint="Name"
+        android:text="Anis"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:padding="@dimen/dimen_10dp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactNoEditText"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:hint="Contact No."
+        android:text="01631875269"
+        android:maxLines="1"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:padding="@dimen/dimen_10dp"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodGroupSpinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactNoEditText"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:entries="@array/blood_groups"
+        android:padding="@dimen/dimen_10dp"
+
+        android:spinnerMode="dialog"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospitalNameEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloodGroupSpinner"
+        android:text="ibne sina"
+        android:hint="Hospital Name"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaSpinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hospitalNameEditText"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:spinnerMode="dialog"
+        android:entries="@array/areas"/>
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/areaSpinner"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="Date When You Need Blood"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateButton"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="Submit"
+        android:id="@+id/submitButton"/>
+
+</android.support.constraint.ConstraintLayout>

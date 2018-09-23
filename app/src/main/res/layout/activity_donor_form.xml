@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/formTitleTextView"
+        android:text="Fill up the form first"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEditText"
+        app:layout_constraintTop_toBottomOf="@id/formTitleTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Name"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp"
+        android:text="Anisur Rahman Babu"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactNoEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:hint="Contact No."
+        android:text="01631875296"
+        android:imeOptions="actionNext"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodGroupSpinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactNoEditText"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:spinnerMode="dialog"
+        android:entries="@array/blood_groups"/>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/areaSpinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bloodGroupSpinner"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:spinnerMode="dialog"
+        android:entries="@array/areas"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/areaSpinner"
+        android:id="@+id/submitButton"
+        android:text="Submit"
+        android:layout_margin="@dimen/dimen_10dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

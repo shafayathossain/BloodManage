@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Blood</string>
+    <string name="i_am_donor">I am donor</string>
+    <string name="i_am_recipient">I am recipient</string>
+
+    <string-array name="blood_groups">
+        <item name="hint">Blood Group</item>
+        <item name="a+">A+</item>
+        <item name="a-">A-</item>
+        <item name="b+">B+</item>
+        <item name="b-">B-</item>
+        <item name="ab+">AB+</item>
+        <item name="ab-">AB-</item>
+        <item name="o+">O+</item>
+        <item name="o-">O-</item>
+    </string-array>
+</resources>

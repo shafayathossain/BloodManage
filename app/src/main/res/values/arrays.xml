@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="areas" >
+        <item name="hint">Your Area</item>
+        <item name="ramna">Ramna</item>
+        <item name="shahbag">Shahbag</item>
+        <item name="dhanmondi">Dhanmondi</item>
+        <item name="kalabagan">Kalabagan</item>
+        <item name="New Market">New Market</item>
+        <item name="hajaribagh">Hajaribagh</item>
+        <item name="lalbagh">Lalbagh</item>
+        <item name="bangshal">Bangshal</item>
+        <item name="chakbazar">Chak Bazar</item>
+        <item name="kamrangichar">Kamrangi Char</item>
+        <item name="sutrapur">Sutrapur</item>
+        <item name="mathijheel">Matijheel</item>
+        <item name="paltan">Paltan</item>
+        <item name="sabujbagh">Sabujbagh</item>
+    </string-array>
+</resources>
