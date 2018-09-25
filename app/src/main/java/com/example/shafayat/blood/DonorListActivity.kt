@@ -1,8 +1,10 @@
 package com.example.shafayat.blood
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.ConnectivityManager
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
@@ -126,5 +128,11 @@ class DonorListActivity : AppCompatActivity(), CallButtonOnClickListener {
                 }
             }
         }
+    }
+
+    fun isNetworkAvailable() : Boolean {
+        var connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        var activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }
